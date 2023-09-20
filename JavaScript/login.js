@@ -43,10 +43,10 @@ function validate()
         if (second != first)
         document.getElementById('errConfirm').innerHTML = "<span style= 'color:red'> Your passwords don't match!</span>";
     else 
-    document.getElementById(div).innerHTML = "OK!";
+    document.getElementById(div).innerHTML = "";
     }
     else
-    document.getElementById(div).innerHTML = "OK!";
+    document.getElementById(div).innerHTML = "";
     }
     function finalValidate()
     {
@@ -54,7 +54,7 @@ function validate()
         for (i=0; i<6;i++)
         {
             var div = divs[i];
-            if (document.getElementById(div).innerHTML == "OK!")
+            if (document.getElementById(div).innerHTML == "")
             count = count +1;
         }
         if (count == 6)
